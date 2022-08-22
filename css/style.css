@@ -1,0 +1,450 @@
+#
+#:after
+#:before {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    color: #131313;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+}
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-list {
+     display: flex;
+}
+.menu-item + .menu-item {
+    padding-left: 10px;
+}
+.menu-link{
+    padding: 43px 20px;
+    text-transform: uppercase;
+    color: #131313;
+}
+.menu-link:hover {
+    background-color: #131313;
+    color: #fff;
+    transition: all .3s;
+}
+.bike {
+    padding: 100px 0 150px;
+}
+.bike-inner {
+    display: flex;
+    justify-content: space-between;
+}
+.bike-column-slider {
+    flex-basis: 630px;
+    max-width: 630px;
+    margin-left: 30px;
+}
+.bike-title {
+    margin: 60px 0 5px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+}
+.bike-subtitle {
+    margin: 0 0 60px;
+    color: #6F6F6F;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+}
+.bike-text {
+    max-width: 420px;
+    margin-bottom: 20px;
+}
+.bike-link {
+    margin-top: 80px;
+    display: inline-block;
+    background-color: #131313;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 28px 71px 28px 81px;
+    letter-spacing: 1.1em;
+    font-size: 20px;
+    line-height: 24px;
+    transition: all .3s;
+}
+.bike-link:hover {
+    background-color: #ff4040;
+}
+.bike-slider .slick-dots{
+     top: 50px;
+     right: 0;
+}
+.slick-dots {
+    position: absolute;
+}
+.slick-dots li + li {
+    padding-top: 10px;
+}
+.slick-dots button{
+    font-size: 0;
+    border-radius: 7px;
+    width: 2px;
+    padding: 0;
+    border: none;
+    background-color: #131313;
+    height: 25px;
+    cursor: pointer;
+}
+.slick-dots button:hover {
+    background-color: #ff4040;
+    transition: all .3s;
+}
+.slick-active button {
+    background-color: #ff4040;
+}
+.bike-list {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+.bike-list-item {
+    max-width: 160px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 57px;
+}
+.bike-list-number {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.bike-list-text {
+    margin-top: 5px;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+    margin: auto 0;
+}
+.info {
+    margin-bottom: 140px;
+}
+.info-inner {
+    display: flex;
+}
+.info-img {
+    margin-right: 60px;
+    flex-basis: 570px;
+}
+.info-list {
+    flex-basis: 490px;
+}
+.info-item + .info-item {
+    padding-top: 50px;
+}
+.info-item-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+.info-item-text {
+    max-width: 450px;
+}
+.characterictics {
+    padding-top: 10px;
+    margin-bottom: 150px;
+}
+.characterictics-head {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+.characterictics-inner {
+    display: flex;
+}
+.characterictics-img {
+    align-self: center;
+}
+.characterictics-items {
+    flex-basis: 570px;
+    margin-right: 100px;
+}
+
+.characterictics-list + .characterictics-list {
+    padding-top: 30px;
+}
+.characterictics-title {
+    padding: 2px 0 3px;
+    text-transform: uppercase;
+    background-color: #131313;
+    color: #fff;
+    font-weight: 700;
+}
+.characterictics-line {
+    display: flex;
+    padding-top: 5px;
+}
+.characterictics-name {
+    min-width: 285px;
+}
+.characterictics-descr {
+    flex-basis: 285px;
+}
+.slider {
+    margin-bottom: 50px;
+}
+.slider-items .slick-dots{
+     top: 0;
+     left: 0;
+}
+.slick-dots {
+    position: absolute;
+}
+.slider-item {
+    padding-left: 50px;
+}
+.price {
+    margin-bottom: 100px;
+}
+.form {
+    max-width: 420px;
+}
+.form-title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+.form-text {
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+.form-input-name,
+.form-input-phone {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #131313;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.form-input-name::placeholder,
+.form-input-phone::placeholder,
+.form-text2{
+    color: #6F6F6F;
+    opacity: 0.5;
+}
+.form-text2 {
+    margin-bottom: 10px;
+}
+.form-label-box {
+    display: flex;
+}
+.form-label + .form-label {
+    margin-left: 23px;
+    margin-bottom: 50px;
+}
+.form-input-radio {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: react(0 0 0 0);
+}
+.form-input-radio:checked + .form-bike {
+    display: block;
+}
+.price-inner {
+    position: relative;
+}
+.form-bike {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.form-bike-price {
+    font-size: 32px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ff4040;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+.form-bike-price:after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 100px;
+    border: 1px solid #ff4040;
+    border-radius: 50%;
+    top: 12px;
+}
+.form-radio-style {
+    width: 80px;
+    height: 12px;
+    border-radius: 30px;
+}
+.form-radio-style-gray {
+    background: #6f6f6f;
+}
+.form-radio-style-white {
+    background: #fff;
+    border: 1px solid #6f6f6f;
+}
+.form-radio-style-red {
+    background-color: #FF4040;
+}
+.form-button {
+    background-color: #131313;
+    color: #fff;
+    padding: 28px 71px 28px 81px;
+    border: none;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 1.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+}
+.form-button:hover {
+    background-color: #FF4040;
+}
+.footer {
+    background-color: #131313;
+    
+}
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.footer-link {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+}
+.footer-social + .footer-social {
+    margin-left: 26px;
+}
+.footer-contacts {
+    font-size: 12px;
+    line-height: 15px;
+     color: #fff;
+}
+.footer-contacts-link {
+    display: flex;
+    align-items: center;
+}
+.footer-contacts-link + .footer-contacts-link{
+    margin-top: 10px;
+}
+.footer-contacts-img{
+    margin-right: 10px;
+}
+@media (max-width:1110px){
+    .bike-inner {
+        flex-wrap: wrap;
+    }
+    .bike-text {
+        max-width: 100%;
+    }
+    .bike {
+        padding: 0;
+    }
+    .bike-link {
+        margin-top: 30px;
+    }
+    .bike-column {
+        margin-bottom: 30px;
+    }
+    .bike-column-slider {
+       max-width: 100%;
+        margin-left: 0;
+    }
+    .info-inner {
+        flex-wrap: wrap;
+    }
+    .characterictics-inner {
+         flex-wrap: wrap;
+    }
+    .price-inner {
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:670px) {
+    .bike-title {
+        font-size: 44px;
+        line-height: 57px;
+        margin: 30px 0 5px;
+    }
+    .bike-subtitle {
+        margin: 0 0 30px;
+        font-size: 22px;
+        line-height: 29px;
+    }
+    .footer-inner {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:640px){
+    .header-inner{
+        display: block;
+        text-align: center;}
+    .menu{margin-top: 50px;}
+    .menu-list {
+        justify-content: space-evenly;}
+    .menu-item + .menu-tem {
+        padding-left: 0;
+    }
+    .menu-link {
+        padding: 25px; 20px;
+    }
+}
+@media (max-width:350px) {
+    .menu-list {
+    justify-content: space-evenly;}
+    .menu-link {
+        font-size: 12px;
+    }
+    .menu { margin-top: 30px;}
+}
